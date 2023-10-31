@@ -1,80 +1,169 @@
 @extends('template')
-
 @section('content')
-<!-- breadcrumb start -->
-<div class="breadcrumb-main ">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="breadcrumb-contain">
-                    <div>
-                        <h2>contact</h2>
-                        <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li><i class="fa fa-angle-double-right"></i></li>
-                            <li><a href="javascript:void(0)">contacts</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- breadcrumb End -->
 
-<!--section start-->
-<section class="contact-page section-big-py-space b-g-light">
-    <div class="custom-container">
-        <div class="row section-big-pb-space">
-            <div class="col-xl-6 offset-xl-3">
-                <h3 class="text-center mb-3">Get in touch</h3>
-                <form class="theme-form">
-                    <div class="row">
-                        <div class="col-md-6">
-                           <div class="form-group">
-                               <label for="name">First Name</label>
-                               <input type="text" class="form-control" id="name" placeholder="Enter Your name" required="">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                              <label for="email">Last Name</label>
-                              <input type="text" class="form-control" id="last-name" placeholder="Last Name" required="">
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                           <div class="form-group">
-                               <label for="review">Phone number</label>
-                               <input type="text" class="form-control" id="review" placeholder="Enter your number" required="">
-                           </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label >Email</label>
-                                <input type="text" class="form-control" placeholder="Email" required="">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div>
-                                <label >Write Your Message</label>
-                                <textarea class="form-control" placeholder="Write Your Message"  rows="2"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <button class="btn btn-normal" type="submit">Send Your Message</button>
-                        </div>
-                    </div>
-                </form>
+
+    <!-- Breadcrumb Section Start -->
+    <div class="section">
+
+        <!-- Breadcrumb Area Start -->
+        <div class="breadcrumb-area bg-light">
+            <div class="container-fluid">
+                <div class="breadcrumb-content text-center">
+                    <h1 class="title">Contact Us</h1>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home </a>
+                        </li>
+                        <li class="active"> Contact Us</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-12 map">
-                <div class="theme-card">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1605.811957341231!2d25.45976406005396!3d36.3940974010114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1550912388321"  allowfullscreen></iframe>
+        <!-- Breadcrumb Area End -->
+
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Contact Us Section Start -->
+    <div class="section section-margin">
+        <div class="container">
+            <div class="row mb-n10">
+                <div class="col-12 col-lg-8 mb-10">
+                    <!-- Section Title Start -->
+                    <div class="section-title" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="title pb-3">Get In Touch</h2>
+                        <span></span>
+                        <div class="title-border-bottom"></div>
+                    </div>
+                    <!-- Section Title End -->
+                    <!-- Contact Form Wrapper Start -->
+                    <div class="contact-form-wrapper contact-form">
+                        <form action="{{ route('contact.us.store') }}" id="contact-form" method="post">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item"  type="text" placeholder="Your Name *" name="name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item" type="email" placeholder="Email *" name="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item" type="phone" placeholder="Phone Number *" name="phone">
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+                                            <div class="input-item mb-4">
+                                                <input class="input-item" type="text" placeholder="Subject *" name="subject">
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                                            <div class="input-item mb-8">
+                                                <textarea class="textarea-item" name="message" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up" data-aos-delay="500">
+                                            <button type="submit" id="submit" name="submit" class="btn btn-dark btn-hover-primary rounded-0">Send A Message</button>
+                                        </div>
+                                        <p class="col-8 form-message mb-0"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-messege"></p>
+                    </div>
+                    <!-- Contact Form Wrapper End -->
+                </div>
+                <div class="col-12 col-lg-4 mb-10">
+                    <!-- Section Title Start -->
+                    <div class="section-title" data-aos="fade-up" data-aos-delay="300">
+                        <h2 class="title pb-3">Contact Info</h2>
+                        <span></span>
+                        <div class="title-border-bottom"></div>
+                    </div>
+                    <!-- Section Title End -->
+
+                    <!-- Contact Information Wrapper Start -->
+                    <div class="row contact-info-wrapper mb-n6">
+
+                        <!-- Single Contact Information Start -->
+                        <div class="col-lg-12 col-md-6 col-sm-12 col-12 single-contact-info mb-6" data-aos="fade-up" data-aos-delay="300">
+
+                            <!-- Single Contact Icon Start -->
+                            <div class="single-contact-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <!-- Single Contact Icon End -->
+
+                            <!-- Single Contact Title Content Start -->
+                            <div class="single-contact-title-content">
+                                <h4 class="title">Postal Address</h4>
+                                <p class="desc-content">{{ $settings->address }}</p>
+                            </div>
+                            <!-- Single Contact Title Content End -->
+
+                        </div>
+                        <!-- Single Contact Information End -->
+
+                        <!-- Single Contact Information Start -->
+                        <div class="col-lg-12 col-md-6 col-sm-12 col-12 single-contact-info mb-6" data-aos="fade-up" data-aos-delay="400">
+
+                            <!-- Single Contact Icon Start -->
+                            <div class="single-contact-icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <!-- Single Contact Icon End -->
+
+                            <!-- Single Contact Title Content Start -->
+                            <div class="single-contact-title-content">
+                                <h4 class="title">Contact Us Anytime</h4>
+                                <p class="desc-content">Mobile: {{ $settings->phone }} <br>Fax: 123 456 789</p>
+                            </div>
+                            <!-- Single Contact Title Content End -->
+
+                        </div>
+                        <!-- Single Contact Information End -->
+
+                        <!-- Single Contact Information Start -->
+                        <div class="col-lg-12 col-md-6 col-sm-12 col-12 single-contact-info mb-6" data-aos="fade-up" data-aos-delay="500">
+
+                            <!-- Single Contact Icon Start -->
+                            <div class="single-contact-icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <!-- Single Contact Icon End -->
+
+                            <!-- Single Contact Title Content Start -->
+                            <div class="single-contact-title-content">
+                                <h4 class="title">Support Overall</h4>
+                                <p class="desc-content"><a href="#">{{ $settings->email }}</a> <br><a href="#">info@example.com</a> </p>
+                            </div>
+                            <!-- Single Contact Title Content End -->
+
+                        </div>
+                        <!-- Single Contact Information End -->
+
+                    </div>
+                    <!-- Contact Information Wrapper End -->
                 </div>
             </div>
         </div>
     </div>
-</section>
-<!--Section ends-->
-@endsection
+    <!-- Contact us Section End -->
+
+    <!-- Contact Map Start -->
+    <div class="section" data-aos="fade-up" data-aos-delay="300">
+        <!--Google Map Area Start-->
+        <div class="google-map-area w-100">
+            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.986005919501!2d-73.9685579655238!3d40.75862446708152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258e4a1c884e5%3A0x24fe1071086b36d5!2sThe%20Atrium!5e0!3m2!1sen!2sbd!4v1585132512970!5m2!1sen!2sbd"></iframe>
+        </div>
+        <!--Google Map Area Start-->
+    </div>
+    <!-- Contact Map End -->
+
+    @endsection

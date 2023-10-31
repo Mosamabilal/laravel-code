@@ -1,523 +1,323 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bigdeal admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
-    <meta name="keywords" content="admin template, Bigdeal admin template, dashboard template, flat admin template, responsive admin template, web app">
-    <meta name="author" content="pixelstrap">
-    <link rel="icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon/favicon.png" type="image/x-icon">
-    <title>Bigdeal - Premium Admin Template</title>
-
-    <!-- Google font-->
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css">
-
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
-
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
-
-    <!-- Prism css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/prism.css">
-
-    <!-- Chartist css -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/chartist.css">
-
-    <!-- vector map css -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vector-map.css">
-
-    <!-- Bootstrap css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.css">
-
-    <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/admin.css">
-</head>
-
-<body>
-
-<!-- page-wrapper Start-->
-<div class="page-wrapper">
-    
-    <!-- Page Header Start-->
-    <div class="page-main-header">
-        <div class="main-header-left">
-            <div class="logo-wrapper"><a href="index.html"><img class="blur-up lazyloaded" src="../assets/images/layout-2/logo/logo.png" alt=""></a></div>
-        </div>
-        <div class="main-header-right ">
-            <div class="mobile-sidebar">
-                <div class="media-body text-end switch-sm">
-                    <label class="switch">
-                        <input id="sidebar-toggle" type="checkbox" checked="checked"><span class="switch-state"></span>
-                    </label>
-                </div>
+<html lang="en" class="light">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.png" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Midone admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template, Midone Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="LEFT4CODE">
+        <title>Dashboard - {{ $settings->name }}</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="{{ asset('assets/admin/dist/css/app.css') }}" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.min.css">
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="py-5">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="{{ ('/admin/index') }}" class="flex mr-auto">
+                    <img alt="Laravel Project" class="w-6" src="dist/images/logo.png">
+                </a>
+                <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
             </div>
-            <div class="nav-right col">
-                <ul class="nav-menus">
+            <div class="scrollable">
+                <a href="javascript:;" class="mobile-menu-toggler"> <i data-lucide="x-circle" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+                <ul class="scrollable__content py-2">
                     <li>
-                        <form class="form-inline search-form">
-                            <div class="form-group">
-                                <input class="form-control-plaintext" type="search" placeholder="Search.."><span class="d-sm-none mobile-search"><i data-feather="search"></i></span>
+                        <a href="{{ ('admin/index') }}" class="menu menu--active">
+                            <div class="menu__icon"> <i data-lucide="home"></i> </div>
+                            <div class="menu__title"> Dashboard </div>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="menu">
+                            <div class="menu__icon"> <i data-lucide="box"></i> </div>
+                            <div class="menu__title"> Menu Layout <i data-lucide="chevron-down" class="menu__sub-icon "></i> </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="index.html" class="menu menu--active">
+                                    <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                                    <div class="menu__title"> Side Menu </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="simple-menu-light-dashboard-overview-1.html" class="menu menu--active">
+                                    <div class="menu__icon"> <i data-lucide="activity"></i> </div>
+                                    <div class="menu__title"> Simple Menu </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- END: Mobile Menu -->
+        <div class="flex mt-[4.7rem] md:mt-0">
+            <!-- BEGIN: Side Menu -->
+            <nav class="side-nav">
+                <a href="{{ ('/admin/index') }}" class="intro-x flex items-center pl-5 pt-4">
+                    <img alt="Laravel Project" class="w-6" src="{{ asset('assets/admin/dist/images/logo.png')}}">
+                    <span class="hidden xl:block text-white text-lg ml-3"> {{ $settings->name }} </span>
+                </a>
+                <div class="side-nav__devider my-6"></div>
+                <ul>
+                    <li>
+
+
+                        <a href="{{ URL('admin/index') }}" class="side-menu {{ (request()->segment(2) == 'index') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-lucide="home"></i> </div>
+                            <div class="side-menu__title">
+                                Dashboard
+                                <div class="side-menu__sub-icon transform rotate-180"> </div>
                             </div>
-                        </form>
-                    </li>
-                    <li class="onhover-dropdown"><a class="txt-dark" href="javascript:void(0)">
-                        <h6>EN</h6></a>
-                        <ul class="language-dropdown onhover-show-div p-20">
-                            <li><a href="javascript:void(0)" data-lng="pt"><i class="flag-icon flag-icon-uy"></i> Portuguese</a></li>
-                            <li><a href="javascript:void(0)" data-lng="es"><i class="flag-icon flag-icon-um"></i> Spanish</a></li>
-                            <li><a href="javascript:void(0)" data-lng="en"><i class="flag-icon flag-icon-is"></i> English</a></li>
-                            <li><a href="javascript:void(0)" data-lng="fr"><i class="flag-icon flag-icon-nz"></i> French</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="text-dark" href="#!" onclick="javascript:toggleFullScreen()"><i data-feather="maximize"></i></a></li>
-                    <li class="onhover-dropdown"><i data-feather="bell"></i><span class="badge badge-pill badge-primary pull-right notification-badge">3</span><span class="dot"></span>
-                        <ul class="notification-dropdown custom-scrollbar onhover-show-div p-0">
-                            <li>
-                                <div class="media">
-                                    <div class="notification-icons bg-success me-3"><i data-feather="thumbs-up"></i></div>
-                                    <div class="media-body">
-                                        <h6 class="font-success">Someone Likes Your Posts</h6>
-                                        <p class="mb-0"> 2 Hours Ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <div class="notification-icons bg-info me-3"><i data-feather="message-circle"></i></div>
-                                    <div class="media-body">
-                                        <h6 class="font-info">3 New Comments</h6>
-                                        <p class="mb-0"> 1 Hours Ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <div class="notification-icons bg-secondary me-3"><i data-feather="download"></i></div>
-                                    <div class="media-body">
-                                        <h6 class="font-secondary">Download Complete</h6>
-                                        <p class="mb-0"> 3 Days Ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <div class="notification-icons bg-success bg-warning me-3">
-                                        <i data-feather="gift"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h6 class="font-secondary">New Order Recieved</h6>
-                                        <p class="mb-0"> 4 Days Ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <div class="notification-icons bg-success me-3">
-                                        <i data-feather="airplay"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h6 class="font-secondary">Apps are ready for update</h6>
-                                        <p class="mb-0"> 3 Minutes Ago</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="media">
-                                    <div class="notification-icons bg-info me-3">
-                                        <i data-feather="alert-circle"></i>
-                                    </div>
-                                    <div class="media-body">
-                                        <h6 class="font-secondary">Server Warning</h6>
-                                        <p class="mb-0"> Just Now</p>
-                                    </div>
-                                </div>
-                            </li>
+                        </a>
 
-                            <li class="bg-light txt-dark"><a href="javascript:void(0)" data-original-title="" title="">All </a> notification</li>
-                        </ul>
                     </li>
-                    <li><a href="javascript:void(0)"><i class="right_side_toggle" data-feather="message-square"></i><span class="dot"></span></a></li>
-                    <li class="onhover-dropdown">
-                        <div class="media align-items-center"><img class="align-self-center pull-right img-50 rounded-circle blur-up lazyloaded" src="../assets/images/dashboard/man.png" alt="header-user">
-                            <div class="dotted-animation"><span class="animate-circle"></span><span class="main-circle"></span></div>
-                        </div>
-                        <ul class="profile-dropdown onhover-show-div p-20 profile-dropdown-hover">
-                            <li><a href="javascript:void(0)">Profile<span class="pull-right"><i data-feather="user"></i></span></a></li>
-                            <li><a href="javascript:void(0)">Inbox<span class="pull-right"><i data-feather="mail"></i></span></a></li>
-                            <li><a href="javascript:void(0)">Taskboard<span class="pull-right"><i data-feather="file-text"></i></span></a></li>
-                            <li><a href="javascript:void(0)">Settings<span class="pull-right"><i data-feather="settings"></i></span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="d-lg-none mobile-toggle pull-right"><i data-feather="more-horizontal"></i></div>
-            </div>
-        </div>
-    </div>
-    <!-- Page Header Ends -->
-
-    <!-- Page Body Start-->
-    <div class="page-body-wrapper">
-
-        <!-- Page Sidebar Start-->
-        <div class="page-sidebar">
-            <div class="sidebar custom-scrollbar">
-                <div class="sidebar-user text-center">
-                    <div><img class="img-60 rounded-circle lazyloaded blur-up" src="../assets/images/dashboard/man.png" alt="#">
-                    </div>
-                    <h6 class="mt-3 f-14">JOHN</h6>
-                    <p>Ux Designer</p>
-                </div>
-                <ul class="sidebar-menu">
-                    <li><a class="sidebar-header" href="index.html"><i data-feather="home"></i><span>Dashboard</span></a></li>
-                    <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="box"></i> <span>Products</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
+                    <li>
+                        <a href="javascript:;" class="side-menu {{ (request()->segment(2) == 'categories') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-lucide="box"></i> </div>
+                            <div class="side-menu__title">
+                                Categories
+                                <div class="side-menu__sub-icon "> <i data-lucide="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
                             <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle"></i>
-                                    <span>Physical</span> <i class="fa fa-angle-right pull-right"></i>
+                                <a href="{{URL('/admin/categories')}}" class="side-menu {{ (request()->segment(2) == 'categories') ? 'side-menu--active' : '' }}">
+                                    <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
+                                    <div class="side-menu__title"> Categories List</div>
                                 </a>
-                                <ul class="sidebar-submenu">
-                                    <li><a href="category.html"><i class="fa fa-circle"></i>Category</a></li>
-                                    <li><a href="category-sub.html"><i class="fa fa-circle"></i>Sub Category</a></li>
-                                    <li><a href="product-list.html"><i class="fa fa-circle"></i>Product List</a></li>
-                                    <li><a href="product-detail.html"><i class="fa fa-circle"></i>Product Detail</a></li>
-                                    <li><a href="add-product.html"><i class="fa fa-circle"></i>Add Product</a></li>
-                                </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"><i class="fa fa-circle"></i>
-                                    <span>Digital</span> <i class="fa fa-angle-right pull-right"></i>
+                                <a href="{{route('categories.create')}}" class="side-menu {{ (request()->segment(2) == 'categories') ? 'side-menu--active' : '' }}">
+                                    <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
+                                    <div class="side-menu__title"> Add New </div>
                                 </a>
-                                <ul class="sidebar-submenu">
-                                    <li><a href="category-digital.html"><i class="fa fa-circle"></i>Category</a></li>
-                                    <li><a href="category-digitalsub.html"><i class="fa fa-circle"></i>Sub Category</a></li>
-                                    <li><a href="product-listdigital.html"><i class="fa fa-circle"></i>Product List</a></li>
-                                    <li><a href="add-digital-product.html"><i class="fa fa-circle"></i>Add Product</a></li>
-                                </ul>
                             </li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="dollar-sign"></i><span>Sales</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="order.html"><i class="fa fa-circle"></i>Orders</a></li>
-                            <li><a href="transactions.html"><i class="fa fa-circle"></i>Transactions</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="tag"></i><span>Coupons</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="coupon-list.html"><i class="fa fa-circle"></i>List Coupons</a></li>
-                            <li><a href="coupon-create.html"><i class="fa fa-circle"></i>Create Coupons </a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="clipboard"></i><span>Pages</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="pages-list.html"><i class="fa fa-circle"></i>List Page</a></li>
-                            <li><a href="page-create.html"><i class="fa fa-circle"></i>Create Page</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="media.html"><i data-feather="camera"></i><span>Media</span></a></li>
-                    <li><a class="sidebar-header" href="javascript:void(0)"><i data-feather="align-left"></i><span>Menus</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="menu-list.html"><i class="fa fa-circle"></i>Menu Lists</a></li>
-                            <li><a href="create-menu.html"><i class="fa fa-circle"></i>Create Menu</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="user-plus"></i><span>Users</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="user-list.html"><i class="fa fa-circle"></i>User List</a></li>
-                            <li><a href="create-user.html"><i class="fa fa-circle"></i>Create User</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="users"></i><span>Vendors</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="list-vendor.html"><i class="fa fa-circle"></i>Vendor List</a></li>
-                            <li><a href="create-vendors.html"><i class="fa fa-circle"></i>Create Vendor</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href=""><i data-feather="chrome"></i><span>Localization</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="translations.html"><i class="fa fa-circle"></i>Translations</a></li>
-                            <li><a href="currency-rates.html"><i class="fa fa-circle"></i>Currency Rates</a></li>
-                            <li><a href="taxes.html"><i class="fa fa-circle"></i>Taxes</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="sidebar-header" href="reports.html"><i data-feather="bar-chart"></i><span>Reports</span></a></li>
-                    <li><a class="sidebar-header" href=""><i data-feather="settings" ></i><span>Settings</span><i class="fa fa-angle-right pull-right"></i></a>
-                        <ul class="sidebar-submenu">
-                            <li><a href="profile.html"><i class="fa fa-circle"></i>Profile</a></li>
-                        </ul>
-                    </li>
-<li><a class="sidebar-header" href="invoice.html"><i data-feather="archive"></i><span>Invoice</span></a>
-                    </li>
-                    <li><a class="sidebar-header" href="login.html"><i data-feather="log-in"></i><span>Login</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- Page Sidebar Ends-->
 
-        <!-- Right sidebar Start-->
-        <div class="right-sidebar custom-scrollbar" id="right_side_bar">
-            <div>
-                <div class="container p-0">
-                    <div class="modal-header p-l-20 p-r-20">
-                        <div class="col-sm-8 p-0">
-                            <h6 class="modal-title font-weight-bold">FRIEND LIST</h6>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="side-menu {{ (request()->segment(2) == 'products') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-lucide="shopping-bag"></i> </div>
+                            <div class="side-menu__title">
+                                Products
+                                <div class="side-menu__sub-icon "> <i data-lucide="chevron-down"></i> </div>
+                            </div>
+                        </a>
+                        <ul class="">
+                            <li>
+                                <a href="{{URL('/admin/products')}}" class="side-menu {{ (request()->segment(2) == 'products') ? 'side-menu--active' : '' }}">
+                                    <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
+                                    <div class="side-menu__title"> Products List</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{route('products.create')}}" class="side-menu {{ (request()->segment(2) == 'products') ? 'side-menu--active' : '' }}">
+                                    <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
+                                    <div class="side-menu__title"> Add New </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="{{ URL('admin/orders')}}" class="side-menu {{ (request()->segment(2) == 'orders') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-lucide="message-square"></i> </div>
+                            <div class="side-menu__title"> Orders </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ URL('admin/slider')}}" class="side-menu {{ (request()->segment(2) == 'slider') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-lucide="hard-drive"></i> </div>
+                            <div class="side-menu__title"> Slider </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ URL('admin/settings')}}" class="side-menu {{ (request()->segment(2) == 'settings') ? 'side-menu--active' : '' }}">
+                            <div class="side-menu__icon"> <i data-lucide="edit"></i> </div>
+                            <div class="side-menu__title"> Settings </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </nav>
+            <!-- END: Side Menu -->
+            <!-- BEGIN: Content -->
+            <div class="content">
+                <!-- BEGIN: Top Bar -->
+                <div class="top-bar">
+                    <!-- BEGIN: Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="-intro-x mr-auto hidden sm:flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Application</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        </ol>
+                    </nav>
+                    <!-- END: Breadcrumb -->
+                    <!-- BEGIN: Search -->
+                    <div class="intro-x relative mr-3 sm:mr-6">
+                        <div class="search hidden sm:block">
+                            <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
+                            <i data-lucide="search" class="search__icon dark:text-slate-500"></i>
                         </div>
-                        <div class="col-sm-4 text-end p-0"><i class="me-2" data-feather="settings"></i></div>
+                        <a class="notification sm:hidden" href=""> <i data-lucide="search" class="notification__icon dark:text-slate-500"></i> </a>
+                        <div class="search-result">
+                            <div class="search-result__content">
+                                <div class="search-result__content__title">Pages</div>
+                                <div class="mb-5">
+                                    <a href="" class="flex items-center">
+                                        <div class="w-8 h-8 bg-success/20 dark:bg-success/10 text-success flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="inbox"></i> </div>
+                                        <div class="ml-3">Mail Settings</div>
+                                    </a>
+                                    <a href="" class="flex items-center mt-2">
+                                        <div class="w-8 h-8 bg-pending/10 text-pending flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="users"></i> </div>
+                                        <div class="ml-3">Users & Permissions</div>
+                                    </a>
+                                    <a href="" class="flex items-center mt-2">
+                                        <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="credit-card"></i> </div>
+                                        <div class="ml-3">Transactions Report</div>
+                                    </a>
+                                </div>
+                                <div class="search-result__content__title">Users</div>
+                                <div class="mb-5">
+                                    <a href="" class="flex items-center mt-2">
+                                        <div class="w-8 h-8 image-fit">
+                                            <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-7.jpg">
+                                        </div>
+                                        <div class="ml-3">Kevin Spacey</div>
+                                        <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">kevinspacey@left4code.com</div>
+                                    </a>
+                                    <a href="" class="flex items-center mt-2">
+                                        <div class="w-8 h-8 image-fit">
+                                            <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-2.jpg">
+                                        </div>
+                                        <div class="ml-3">Johnny Depp</div>
+                                        <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">johnnydepp@left4code.com</div>
+                                    </a>
+                                    <a href="" class="flex items-center mt-2">
+                                        <div class="w-8 h-8 image-fit">
+                                            <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-5.jpg">
+                                        </div>
+                                        <div class="ml-3">Johnny Depp</div>
+                                        <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">johnnydepp@left4code.com</div>
+                                    </a>
+                                    <a href="" class="flex items-center mt-2">
+                                        <div class="w-8 h-8 image-fit">
+                                            <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/profile-9.jpg">
+                                        </div>
+                                        <div class="ml-3">Morgan Freeman</div>
+                                        <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">morganfreeman@left4code.com</div>
+                                    </a>
+                                </div>
+                                <div class="search-result__content__title">Products</div>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/preview-9.jpg">
+                                    </div>
+                                    <div class="ml-3">Oppo Find X2 Pro</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Smartphone &amp; Tablet</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/preview-1.jpg">
+                                    </div>
+                                    <div class="ml-3">Nikon Z6</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Photography</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/preview-2.jpg">
+                                    </div>
+                                    <div class="ml-3">Sony Master Series A9G</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">Electronic</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Midone - HTML Admin Template" class="rounded-full" src="dist/images/preview-8.jpg">
+                                    </div>
+                                    <div class="ml-3">Dell XPS 13</div>
+                                    <div class="ml-auto w-48 truncate text-slate-500 text-xs text-right">PC &amp; Laptop</div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="friend-list-search mt-0">
-                    <input type="text" placeholder="search friend"><i class="fa fa-search"></i>
-                </div>
-                <div class="p-l-30 p-r-30">
-                    <div class="chat-box">
-                        <div class="people-list friend-list">
-                            <ul class="list">
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user.png" alt="">
-                                    <div class="status-circle online"></div>
-                                    <div class="about">
-                                        <div class="name">Vincent Porter</div>
-                                        <div class="status"> Online</div>
-                                    </div>
+                    <!-- END: Search -->
+
+                    <!-- BEGIN: Account Menu -->
+                    <div class="intro-x dropdown w-8 h-8">
+                        <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in" role="button" aria-expanded="false" data-tw-toggle="dropdown">
+                            <img alt="Midone - HTML Admin Template" src="{{ asset('assets/admin/dist/images/profile.png') }}">
+                        </div>
+                        <div class="dropdown-menu w-56">
+                            <ul class="dropdown-content bg-primary text-white">
+                                <li class="p-2">
+                                    <div class="font-medium">{{ Auth::user()->name }}</div>
+
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user1.jpg" alt="">
-                                    <div class="status-circle away"></div>
-                                    <div class="about">
-                                        <div class="name">Ain Chavez</div>
-                                        <div class="status"> 28 minutes ago</div>
-                                    </div>
+                                <li>
+                                    <hr class="dropdown-divider border-white/[0.08]">
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user2.jpg" alt="">
-                                    <div class="status-circle online"></div>
-                                    <div class="about">
-                                        <div class="name">Kori Thomas</div>
-                                        <div class="status"> Online</div>
-                                    </div>
+                                <li>
+                                    <a href="{{ URL('/admin/profile') }}" class="dropdown-item hover:bg-white/5"> <i data-lucide="user" class="w-4 h-4 mr-2"></i> Profile </a>
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user3.jpg" alt="">
-                                    <div class="status-circle online"></div>
-                                    <div class="about">
-                                        <div class="name">Erica Hughes</div>
-                                        <div class="status"> Online</div>
-                                    </div>
+
+
+                                <li>
+                                    <hr class="dropdown-divider border-white/[0.08]">
                                 </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/man.png" alt="">
-                                    <div class="status-circle offline"></div>
-                                    <div class="about">
-                                        <div class="name">Ginger Johnston</div>
-                                        <div class="status"> 2 minutes ago</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user5.jpg" alt="">
-                                    <div class="status-circle away"></div>
-                                    <div class="about">
-                                        <div class="name">Prasanth Anand</div>
-                                        <div class="status"> 2 hour ago</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/designer.jpg" alt="">
-                                    <div class="status-circle online"></div>
-                                    <div class="about">
-                                        <div class="name">Hileri Jecno</div>
-                                        <div class="status"> Online</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user3.jpg" alt="">
-                                    <div class="status-circle online"></div>
-                                    <div class="about">
-                                        <div class="name">Erica Hughes</div>
-                                        <div class="status"> Online</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/man.png" alt="">
-                                    <div class="status-circle offline"></div>
-                                    <div class="about">
-                                        <div class="name">Ginger Johnston</div>
-                                        <div class="status"> 2 minutes ago</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user5.jpg" alt="">
-                                    <div class="status-circle away"></div>
-                                    <div class="about">
-                                        <div class="name">Prasanth Anand</div>
-                                        <div class="status"> 2 hour ago</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user3.jpg" alt="">
-                                    <div class="status-circle online"></div>
-                                    <div class="about">
-                                        <div class="name">Erica Hughes</div>
-                                        <div class="status"> Online</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/man.png" alt="">
-                                    <div class="status-circle offline"></div>
-                                    <div class="about">
-                                        <div class="name">Ginger Johnston</div>
-                                        <div class="status"> 2 minutes ago</div>
-                                    </div>
-                                </li>
-                                <li class="clearfix"><img class="rounded-circle user-image" src="../assets/images/dashboard/user5.jpg" alt="">
-                                    <div class="status-circle away"></div>
-                                    <div class="about">
-                                        <div class="name">Prasanth Anand</div>
-                                        <div class="status"> 2 hour ago</div>
-                                    </div>
+                                <li>
+                                    <a href="{{ URL('/admin/logout') }}" class="dropdown-item hover:bg-white/5"> <i data-lucide="toggle-right" class="w-4 h-4 mr-2"></i> Logout </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <!-- END: Account Menu -->
                 </div>
+                <!-- END: Top Bar -->
+				<!-- BEGIN: Notification -->
+                @if(Session::has('message'))
+                    <div class="intro-y col-span-11 alert alert-success text-white alert-dismissible show flex items-center mb-6" role="alert">
+                        <span><i data-lucide="info" class="w-4 h-4 mr-2"></i></span>
+                        <span>{{ Session::get('message') }} </span>
+                        <button type="button" class="btn-close text-white" data-tw-dismiss="alert" aria-label="Close"> <i data-lucide="x" class="w-4 h-4"></i> </button>
+                    </div>
+
+                @elseif ($errors->any())
+                @foreach ($errors->all() as $error )
+                    <div class="intro-y col-span-11 alert alert-danger text-white alert-dismissible show flex items-center mb-6" role="alert">
+                        <span><i data-lucide="info" class="w-4 h-4 mr-2"></i></span>
+                        <span>{{ $error }} </span>
+                        <button type="button" class="btn-close text-white" data-tw-dismiss="alert" aria-label="Close"> <i data-lucide="x" class="w-4 h-4"></i> </button>
+                    </div>
+                    @endforeach
+                @endif
+
+             @yield('content')
+
+
+
+
+
+			   </div>
             </div>
-        </div>
-        <!-- Right sidebar Ends-->
-
-        <div class="page-body">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-          
-
-
-
-
-
-
-		@yield('content')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- Container-fluid Ends-->
-
+            <!-- END: Content -->
         </div>
 
-        <!-- footer start-->
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6 footer-copyright">
-                        <p class="mb-0">Copyright 2019 © Bigdeal All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="pull-right mb-0">Hand crafted & made with<i class="fa fa-heart"></i></p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer end-->
-    </div>
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="{{ asset('assets/admin/dist/js/app.js')}}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.31/dist/sweetalert2.all.min.js"></script>
 
-</div>
-
-<!-- latest jquery-->
-<script src="../assets/js/jquery-3.3.1.min.js"></script>
-
-<!-- Bootstrap js-->
-<script src="../assets/js/popper.min.js"></script>
-<script src="../assets/js/bootstrap.js"></script>
-
-<!-- feather icon js-->
-<script src="../assets/js/icons/feather-icon/feather.min.js"></script>
-<script src="../assets/js/icons/feather-icon/feather-icon.js"></script>
-
-<!-- Sidebar jquery-->
-<script src="../assets/js/sidebar-menu.js"></script>
-
-<!--chartist js-->
-<script src="../assets/js/chart/chartist/chartist.js"></script>
-
-
-<!-- lazyload js-->
-<script src="../assets/js/lazysizes.min.js"></script>
-
-<!--copycode js-->
-<script src="../assets/js/prism/prism.min.js"></script>
-<script src="../assets/js/clipboard/clipboard.min.js"></script>
-<script src="../assets/js/custom-card/custom-card.js"></script>
-
-<!--counter js-->
-<script src="../assets/js/counter/jquery.waypoints.min.js"></script>
-<script src="../assets/js/counter/jquery.counterup.min.js"></script>
-<script src="../assets/js/counter/counter-custom.js"></script>
-
-<!--Customizer admin-->
-<script src="../assets/js/admin-customizer.js"></script>
-
-<!--map js-->
-<script src="../assets/js/vector-map/jquery-jvectormap-2.0.2.min.js"></script>
-<script src="../assets/js/vector-map/map/jquery-jvectormap-world-mill-en.js"></script>
-
-<!--apex chart js-->
-<script src="../assets/js/chart/apex-chart/apex-chart.js"></script>
-<script src="../assets/js/chart/apex-chart/stock-prices.js"></script>
-
-<!--chartjs js-->
-<script src="../assets/js/chart/flot-chart/excanvas.js"></script>
-<script src="../assets/js/chart/flot-chart/jquery.flot.js"></script>
-<script src="../assets/js/chart/flot-chart/jquery.flot.time.js"></script>
-<script src="../assets/js/chart/flot-chart/jquery.flot.categories.js"></script>
-<script src="../assets/js/chart/flot-chart/jquery.flot.stack.js"></script>
-<script src="../assets/js/chart/flot-chart/jquery.flot.pie.js"></script>
-<!--dashboard custom js-->
-<script src="../assets/js/dashboard/default.js"></script>
-
-<!--right sidebar js-->
-<script src="../assets/js/chat-menu.js"></script>
-
-<!--height equal js-->
-<script src="../assets/js/equal-height.js"></script>
-
-<!-- lazyload js-->
-<script src="../assets/js/lazysizes.min.js"></script>
-
-<!--script admin-->
-<script src="../assets/js/admin-script.js"></script>
-
-</body>
+    </body>
 </html>

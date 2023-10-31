@@ -2,994 +2,388 @@
 
 @section('content')
 
-<!-- breadcrumb start -->
-<div class="breadcrumb-main ">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="breadcrumb-contain">
-          <div>
-            <h2>category</h2>
-            <ul>
-              <li><a href="index.html">home</a></li>
-              <li><i class="fa fa-angle-double-right"></i></li>
-              <li><a href="javascript:void(0)">category</a></li>
-            </ul>
-          </div>
+    <!-- Breadcrumb Section Start -->
+    <div class="section">
+
+        <!-- Breadcrumb Area Start -->
+        <div class="breadcrumb-area bg-light">
+            <div class="container-fluid">
+                <div class="breadcrumb-content text-center">
+                    <h1 class="title">Shop</h1>
+                    <ul>
+                        <li>
+                            <a href="{{ URL('home') }}">Home </a>
+                        </li>
+                        <li class="active"> shop</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
+        <!-- Breadcrumb Area End -->
+
     </div>
-  </div>
-</div>
-<!-- breadcrumb End -->
+    <!-- Breadcrumb Section End -->
 
+    <!-- Shop Section Start -->
+    <div class="section section-margin">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-lg-9 col-12 col-custom">
 
-<!-- section start -->
-<section class="section-big-pt-space ratio_asos b-g-light">
-  <div class="collection-wrapper">
-    <div class="custom-container">
-      <div class="row">
-        <div class="col-sm-3 collection-filter category-page-side">
-          <!-- side-bar colleps block stat -->
-          <div class="collection-filter-block creative-card creative-inner category-side">
-            <!-- brand filter start -->
-            <div class="collection-mobile-back">
-              <span class="filter-back"><i class="fa fa-angle-left" aria-hidden="true"></i> back</span></div>
-            <div class="collection-collapse-block open">
-              <h3 class="collapse-block-title mt-0">brand</h3>
-              <div class="collection-collapse-block-content">
-                <div class="collection-brand-filter">
-                  <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                    <input type="checkbox" class="custom-control-input form-check-input" id="zara">
-                    <label class="custom-control-label form-check-label" for="zara">zara</label>
-                  </div>
-                  <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                    <input type="checkbox" class="custom-control-input form-check-input" id="vera-moda">
-                    <label class="custom-control-label form-check-label" for="vera-moda">vera-moda</label>
-                  </div>
-                  <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                    <input type="checkbox" class="custom-control-input form-check-input" id="forever-21">
-                    <label class="custom-control-label form-check-label" for="forever-21">forever-21</label>
-                  </div>
-                  <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                    <input type="checkbox" class="custom-control-input form-check-input" id="roadster">
-                    <label class="custom-control-label form-check-label" for="roadster">roadster</label>
-                  </div>
-                  <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                    <input type="checkbox" class="custom-control-input form-check-input" id="only">
-                    <label class="custom-control-label form-check-label" for="only">only</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- color filter start here -->
-            <div class="collection-collapse-block open">
-              <h3 class="collapse-block-title">colors</h3>
-              <div class="collection-collapse-block-content">
-                <div class="color-selector">
-                  <ul>
-                    <li >
-                      <div class="color-1 active" ></div> white (14)
-                    </li>
-                    <li >
-                      <div class="color-2"></div> brown(24)
-                    </li>
-                    <li >
-                      <div class="color-3"></div> red(18)
-                    </li>
-                    <li >
-                      <div class="color-4"></div> purple(10)
-                    </li>
-                    <li >
-                      <div class="color-5"></div> teal(9)
-                    </li>
-                    <li >
-                      <div class="color-6"></div> pink(11)
-                    </li>
-                    <li >
-                      <div class="color-7"></div> coral(15)
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+                    <!--shop toolbar start-->
+                    <div class="shop_toolbar_wrapper flex-column flex-md-row mb-10">
 
-            <!-- size filter start here -->
-            <div class="collection-collapse-block open">
-              <h3 class="collapse-block-title">size</h3>
-              <div class="collection-collapse-block-content">
-                <div class="size-selector">
-                  <div class="collection-brand-filter">
-                    <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                      <input type="checkbox" class="custom-control-input form-check-input" id="small">
-                      <label class="custom-control-label form-check-label" for="small">s</label>
-                    </div>
-                    <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                      <input type="checkbox" class="custom-control-input form-check-input" id="mediam">
-                      <label class="custom-control-label form-check-label" for="mediam">m</label>
-                    </div>
-                    <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                      <input type="checkbox" class="custom-control-input form-check-input" id="large">
-                      <label class="custom-control-label form-check-label" for="large">l</label>
-                    </div>
-                    <div class="custom-control custom-checkbox  form-check collection-filter-checkbox">
-                      <input type="checkbox" class="custom-control-input form-check-input" id="extralarge">
-                      <label class="custom-control-label form-check-label" for="extralarge">xl</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+                        <!-- Shop Top Bar Left start -->
+                        <div class="shop-top-bar-left mb-md-0 mb-2">
+                            <div class="shop-top-show">
+                                <span>Showing 1–12 of 39 results</span>
+                            </div>
+                        </div>
+                        <!-- Shop Top Bar Left end -->
 
-
-            <!-- price filter start here -->
-            <div class="collection-collapse-block border-0 open">
-              <h3 class="collapse-block-title">price</h3>
-              <div class="collection-collapse-block-content">
-                <div class="filter-slide">
-                  <input class="js-range-slider" type="text" name="my_range" value="" data-type="double"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- silde-bar colleps block end here -->
-          <!-- side-bar single product slider start -->
-          <div class="theme-card creative-card creative-inner">
-            <h5 class="title-border">new product</h5>
-            <div class="slide-1">
-              <div>
-                <div class="media-banner plrb-0 b-g-white1 border-0">
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/3.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>sumsung galaxy</p></a>
-                              <h6>$47.05 <span>$55.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/1.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>bajaj rex mixer</p></a>
-                              <h6>$40.05 <span>$60.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/2.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>usha table fan</p></a>
-                              <h6>$52.05 <span>$60.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="media-banner plrb-0 b-g-white1 border-0">
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/2.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>usha table fan</p></a>
-                              <h6>$52.05 <span>$60.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/3.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>sumsung galaxy</p></a>
-                              <h6>$47.05 <span>$55.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/1.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>bajaj rex mixer</p></a>
-                              <h6>$40.05 <span>$60.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="media-banner plrb-0 b-g-white1 border-0">
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/1.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>bajaj rex mixer</p></a>
-                              <h6>$40.05 <span>$60.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/2.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>usha table fan</p></a>
-                              <h6>$52.05 <span>$60.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media-banner-box">
-                    <div class="media">
-                      <a href="product-page(left-sidebar).html" tabindex="0">
-                        <img src="../assets/images/layout-2/media-banner/3.jpg" class="img-fluid " alt="banner">
-                      </a>
-                      <div class="media-body">
-                        <div class="media-contant">
-                          <div>
-                            <div class="product-detail">
-                              <ul class="rating">
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star-o"></i></li>
-                              </ul>
-                              <a href="product-page(left-sidebar).html" tabindex="0"><p>sumsung galaxy</p></a>
-                              <h6>$47.05 <span>$55.21</span></h6>
-                            </div>
-                            <div class="cart-info">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" ><i  data-feather="heart" class="add-to-wish"></i></a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"><i  data-feather="eye"></i></a>
-                              <a href="compare.html"  class="tooltip-top" data-tippy-content="Compare"><i  data-feather="refresh-cw"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- side-bar single product slider end -->
-          <!-- side-bar banner start here -->
-          <div class="collection-sidebar-banner">
-            <a href="javascript:void(0)"><img src="../assets/images/category/side-banner.png" class="img-fluid " alt=""></a>
-          </div>
-          <!-- side-bar banner end here -->
-
-        </div>
-        <div class="collection-content col">
-          <div class="page-main-content">
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="top-banner-wrapper">
-                  <a href="product-page(left-sidebar).html"><img src="../assets/images/category/1.jpg" class="img-fluid " alt=""></a>
-                  <div class="top-banner-content small-section">
-                    <h4>fashion</h4>
-                    <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                  </div>
-                </div>
-                <div class="collection-product-wrapper">
-                  <div class="product-top-filter">
-                    <div class="row">
-                      <div class="col-xl-12">
-                        <div class="filter-main-btn"><span class="filter-btn  "><i class="fa fa-filter" aria-hidden="true"></i> Filter</span></div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="product-filter-content">
-                          <div class="search-count">
-                            <h5>Showing Products 1-24 of 10 Result</h5></div>
-                          <div class="collection-view">
-                            <ul>
-                              <li><i class="fa fa-th grid-layout-view"></i></li>
-                              <li><i class="fa fa-list-ul list-layout-view"></i></li>
-                            </ul>
-                          </div>
-                          <div class="collection-grid-view">
-                            <ul>
-                              <li><img src="../assets/images/category/icon/2.png" alt="" class="product-2-layout-view"></li>
-                              <li><img src="../assets/images/category/icon/3.png" alt="" class="product-3-layout-view"></li>
-                              <li><img src="../assets/images/category/icon/4.png" alt="" class="product-4-layout-view"></li>
-                              <li><img src="../assets/images/category/icon/6.png" alt="" class="product-6-layout-view"></li>
-                            </ul>
-                          </div>
-                          <div class="product-page-per-view">
-                            <select>
-                              <option value="High to low">24 Products Par Page</option>
-                              <option value="Low to High">50 Products Par Page</option>
-                              <option value="Low to High">100 Products Par Page</option>
-                            </select>
-                          </div>
-                          <div class="product-page-filter">
-                            <select>
-                              <option value="High to low">Sorting items</option>
-                              <option value="Low to High">50 Products</option>
-                              <option value="Low to High">100 Products</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-wrapper-grid product">
-                    <div class="row">
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/1.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a1.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    realme not 7
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $60.21 </div>
-                                <div class="price">
-                                  <div class="price"> $50.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">                             
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/2.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a2.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    wireless speaker
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $56.21 </div>
-                                <div class="price">
-                                  <div class="price"> $ 24.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/3.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a3.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    Travel Backpack
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $90.21 </div>
-                                <div class="price">
-                                  <div class="price"> $70.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/4.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a4.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    Modern Shoes
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $ 70.21 </div>
-                                <div class="price">
-                                  <div class="price"> $ 44.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/5.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a5.jpg" class="img-fluid  " alt="product"> </a>
+                        <!-- Shopt Top Bar Right Start -->
+                        <div class="shop-top-bar-right">
+                            <div class="shop-short-by mr-4">
+                                <select class="nice-select" aria-label=".form-select-sm example">
+                                    <option selected>Show 24</option>
+                                    <option value="1">Show 24</option>
+                                    <option value="2">Show 12</option>
+                                    <option value="3">Show 15</option>
+                                    <option value="3">Show 30</option>
+                                </select>
                             </div>
 
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    sleeve fress
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $ 56.21 </div>
-                                <div class="price">
-                                  <div class="price"> $ 24.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/6.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a5.jpg" class="img-fluid  " alt="product"> </a>
+                            <div class="shop-short-by mr-4">
+                                <select class="nice-select" aria-label=".form-select-sm example">
+                                    <option selected>Short by Default</option>
+                                    <option value="1">Short by Popularity</option>
+                                    <option value="2">Short by Rated</option>
+                                    <option value="3">Short by Latest</option>
+                                    <option value="3">Short by Price</option>
+                                    <option value="3">Short by Price</option>
+                                </select>
                             </div>
 
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    Acer Swift laptop
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $ 57.21 </div>
-                                <div class="price">
-                                  <div class="price"> $ 30.05 </div>
-                                </div>
-                              </div>
+                            <div class="shop_toolbar_btn">
+                                <button data-role="grid_3" type="button" class="active btn-grid-4" title="Grid"><i class="fa fa-th"></i></button>
+                                <button data-role="grid_list" type="button" class="btn-list" title="List"><i class="fa fa-th-list"></i></button>
                             </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/7.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a7.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
+                        <!-- Shopt Top Bar Right End -->
 
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    fastrack watch
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $ 88.21 </div>
-                                <div class="price">
-                                  <div class="price"> $65.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product">
-                          <div class="product-box">
-                            <div class="product-imgbox">
-                              <div class="product-front">
-                                <img src="../assets/images/layout-1/product/3.jpg" class="img-fluid  " alt="product">
-                              </div>
-                              <div class="product-back">
-                                <img src="../assets/images/layout-1/product/a3.jpg" class="img-fluid  " alt="product">
-                              </div>
-                            </div>
-                            <div class="product-detail detail-center ">
-                              <div class="detail-title">
-                                <div class="detail-left">
-                                  <div class="rating-star">
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
-                                  </div>
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                  <a href="">
-                                    <h6 class="price-title">
-                                      reader will be distracted.
-                                    </h6>
-                                  </a>
-                                </div>
-                                <div class="detail-right">
-                                  <div class="check-price">
-                                    $ 56.21
-                                  </div>
-                                  <div class="price">
-                                    <div class="price">
-                                      $ 24.05
+                    </div>
+                    <!--shop toolbar end-->
+
+                    <!-- Shop Wrapper Start -->
+                    <div class="row shop_wrapper grid_3">
+
+                        <!-- Single Product Start -->
+                        @foreach ($products as $product)
+
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 product" data-aos="fade-up" data-aos-delay="200">
+                            <div class="product-inner">
+                                <div class="thumb">
+                                    <a href={{ URL('detail/'.$product->id) }} class="image">
+                                        <img class="first-image" src="{{ asset('uploads/'.$product->image) }}" alt="Product" />
+                                        <img class="second-image" src="{{ asset('uploads/'.$product->image_2) }}" alt="Product" />
+                                    </a>
+                                    <div class="actions">
+                                        <a href="wishlist.html" title="Wishlist" class="action wishlist"><i class="pe-7s-like"></i></a>
+                                        <a href="#" title="Quickview" class="action quickview" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="pe-7s-search"></i></a>
+                                        <a href="compare.html" title="Compare" class="action compare"><i class="pe-7s-shuffle"></i></a>
                                     </div>
-                                  </div>
                                 </div>
-                              </div>
-                              <div class="icon-detail">
-                                <button data-bs-toggle="modal" data-bs-target="#addtocart"  onclick="openCart()" class="tooltip-top" data-tippy-content="Add to cart" >
-                                  <i  data-feather="shopping-cart"></i>
-                                </button>
-                                <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" >
-                                  <i  data-feather="heart"></i>
-                                </a>
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View">
-                                  <i  data-feather="eye"></i>
-                                </a>
-                                <a href="compare.html" class="tooltip-top" data-tippy-content="Compare">
-                                  <i  data-feather="refresh-cw"></i>
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/8.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a8.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
+                                <div class="content">
+                                    <h5 class="title"><a href="{{ URL('detail/'.$product->id)  }}">{{ $product->name }}</a></h5>
+                                    <span class="ratings">
+                                            <span class="rating-wrap">
+                                                <span class="star" style="width: 100%"></span>
+                                    </span>
+                                    <span class="rating-num">(4)</span>
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce posuere metus vitae arcu imperdiet, id aliquet ante scelerisque. Sed sit amet sem vitae urna fringilla tempus.</p>
+                                    <span class="price">
+                                            <span class="new">{{ $product->price.'Rs' }}</span>
+                                    <span class="old">$42.85</span>
+                                    </span>
 
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    dressing mirror
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $ 97.21 </div>
-                                <div class="price">
-                                  <div class="price"> $ 84.05 </div>
                                 </div>
-                              </div>
                             </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
                         </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/1.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a1.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
+                        <!-- Single Product End -->
+                        @endforeach
 
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    realme not 7
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $60.21 </div>
-                                <div class="price">
-                                  <div class="price"> $50.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/2.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a2.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
 
-                            
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    wireless speaker
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $56.21 </div>
-                                <div class="price">
-                                  <div class="price"> $ 24.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-3 col-md-4 col-6  col-grid-box">
-                        <div class="product-box">
-                          <div class="product-imgbox">
-                            <div class="product-front">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/3.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                            <div class="product-back">
-                              <a href="product-page(left-sidebar).html"> <img src="../assets/images/layout-4/product/a3.jpg" class="img-fluid  " alt="product"> </a>
-                            </div>
-                          </div>
-                          <div class="product-detail detail-center detail-inverse">
-                            <div class="detail-title">
-                              <div class="detail-left">
-                                <div class="rating-star"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                                <a href="product-page(left-sidebar).html">
-                                  <h6 class="price-title">
-                                    Travel Backpack
-                                  </h6> </a>
-                              </div>
-                              <div class="detail-right">
-                                <div class="check-price"> $90.21 </div>
-                                <div class="price">
-                                  <div class="price"> $70.05 </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="icon-detail">
-                              <button class="tooltip-top add-cartnoty" data-tippy-content="Add to cart"> <i  data-feather="shopping-cart"></i> </button>
-                              <a href="javascript:void(0)"  class="add-to-wish tooltip-top"  data-tippy-content="Add to Wishlist" > <i  data-feather="heart"></i> </a>
-                              <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#quick-view" class="tooltip-top"  data-tippy-content="Quick View"> <i  data-feather="eye"></i> </a>
-                              <a href="compare.html" class="tooltip-top" data-tippy-content="Compare"> <i  data-feather="refresh-cw"></i> </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="product-pagination">
-                    <div class="theme-paggination-block">
-                      <div class="row">
-                        <div class="col-xl-6 col-md-6 col-sm-12">
-                          <nav aria-label="Page navigation">
-                            <ul class="pagination">
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Previous"><span aria-hidden="true"><i class="fa fa-chevron-left" aria-hidden="true"></i></span> <span class="sr-only">Previous</span></a></li>
-                              <li class="page-item "><a class="page-link" href="javascript:void(0)">1</a></li>
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a></li>
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                              <li class="page-item"><a class="page-link" href="javascript:void(0)" aria-label="Next"><span aria-hidden="true"><i class="fa fa-chevron-right" aria-hidden="true"></i></span> <span class="sr-only">Next</span></a></li>
-                            </ul>
-                          </nav>
+                    <!-- Shop Wrapper End -->
+
+                    <!--shop toolbar start-->
+                    <div class="shop_toolbar_wrapper mt-10">
+
+                        <!-- Shop Top Bar Left start -->
+                        <div class="shop-top-bar-left">
+                            <div class="shop-short-by mr-4">
+                                <select class="nice-select rounded-0" aria-label=".form-select-sm example">
+                                    <option selected>Show 12 Per Page</option>
+                                    <option value="1">Show 12 Per Page</option>
+                                    <option value="2">Show 24 Per Page</option>
+                                    <option value="3">Show 15 Per Page</option>
+                                    <option value="3">Show 30 Per Page</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-xl-6 col-md-6 col-sm-12">
-                          <div class="product-search-count-bottom">
-                            <h5>Showing Products 1-24 of 10 Result</h5></div>
+                        <!-- Shop Top Bar Left end -->
+
+                        <!-- Shopt Top Bar Right Start -->
+                        <div class="shop-top-bar-right">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                      </div>
+                        <!-- Shopt Top Bar Right End -->
+
                     </div>
-                  </div>
+                    <!--shop toolbar end-->
+
                 </div>
-              </div>
+                <div class="col-lg-3 col-12 col-custom">
+                    <!-- Sidebar Widget Start -->
+                    <aside class="sidebar_widget mt-10 mt-lg-0">
+                        <div class="widget_inner" data-aos="fade-up" data-aos-delay="200">
+                            <div class="widget-list mb-10">
+                                <h3 class="widget-title mb-4">Search</h3>
+                                <div class="search-box">
+                                    <input type="text" class="form-control" placeholder="Search Our Store" aria-label="Search Our Store">
+                                    <button class="btn btn-dark btn-hover-primary" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="widget-list mb-10">
+                                <h3 class="widget-title mb-4">Menu Categories</h3>
+                                <!-- Widget Menu Start -->
+                                <nav>
+                                    <ul class="category-menu mb-n3">
+                                        <li class="menu-item-has-children pb-4">
+                                            <a href="#">Women <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Natural Cosmetic</a></li>
+                                                <li><a href="#">Woven Fashion Tops</a></li>
+                                                <li><a href="#">Knitted Fabrics</a></li>
+                                                <li><a href="#">Smart Watch</a></li>
+                                                <li><a href="#">Handmade Bag</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children pb-4">
+                                            <a href="#">Men <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Sunglasses</a></li>
+                                                <li><a href="#">Belt and Wallet</a></li>
+                                                <li><a href="#">Lather Shoe</a></li>
+                                                <li><a href="#">Corporate Pant and Shirt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children pb-4">
+                                            <a href="#">Kids <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Kids Fashion</a></li>
+                                                <li><a href="#">Kids Toy</a></li>
+                                                <li><a href="#">Playground</a></li>
+                                                <li><a href="#">Video Games</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children pb-4">
+                                            <a href="#">Fashion <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">World Famous Fashion</a></li>
+                                                <li><a href="#">Champion Beauty</a></li>
+                                                <li><a href="#">Fashion of Nation</a></li>
+                                                <li><a href="#">Classic Looks</a></li>
+                                                <li><a href="#">Eye Fashion</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children pb-4">
+                                            <a href="#">Others <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Winter Collection</a></li>
+                                                <li><a href="#">Sun Protection</a></li>
+                                                <li><a href="#">Water Resistant</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- Widget Menu End -->
+                            </div>
+                            <div class="widget-list mb-10">
+                                <h3 class="widget-title mb-5">Price Filter</h3>
+                                <!-- Widget Menu Start -->
+                                <form action="#">
+                                    <div id="slider-range"></div>
+                                    <button class="slider-range-submit" type="submit">Filter</button>
+                                    <input class="slider-range-amount" type="text" name="text" id="amount" />
+                                </form>
+                                <!-- Widget Menu End -->
+                            </div>
+                            <div class="widget-list mb-10">
+                                <h3 class="widget-title">Categories</h3>
+                                <div class="sidebar-body">
+                                    <ul class="sidebar-list">
+                                        <li><a href="#">All Product</a></li>
+                                        <li><a href="#">Best Seller (5)</a></li>
+                                        <li><a href="#">Featured (4)</a></li>
+                                        <li><a href="#">New Products (6)</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="widget-list mb-10">
+                                <h3 class="widget-title">Color</h3>
+                                <div class="sidebar-body">
+                                    <ul class="checkbox-container categories-list">
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck12">
+                                                <label class="custom-control-label" for="customCheck12">black (20)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck13">
+                                                <label class="custom-control-label" for="customCheck13">red (6)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck14">
+                                                <label class="custom-control-label" for="customCheck14">blue (8)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck11">
+                                                <label class="custom-control-label" for="customCheck11">green (5)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck15">
+                                                <label class="custom-control-label" for="customCheck15">pink (4)</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="widget-list mb-10">
+                                <h3 class="widget-title mb-4">Tags</h3>
+                                <div class="sidebar-body">
+                                    <ul class="tags mb-n2">
+                                        <li><a href="#">Men</a></li>
+                                        <li><a href="#">Women</a></li>
+                                        <li><a href="#">Fashion</a></li>
+                                        <li><a href="#">Watch</a></li>
+                                        <li><a href="#">Handmade</a></li>
+                                        <li><a href="#">Lather</a></li>
+                                        <li><a href="#">Fabrics</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="widget-list">
+                                <h3 class="widget-title mb-4">Recent Products</h3>
+                                <div class="sidebar-body product-list-wrapper mb-n6">
+                                    <!-- Single Product List Start -->
+                                    <div class="single-product-list product-hover mb-6">
+                                        <div class="thumb">
+                                            <a href="single-product.html" class="image">
+                                                <img class="first-image" src="assets/images/products/small-product/1.jpg" alt="Product" />
+                                                <img class="second-image" src="assets/images/products/small-product/5.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title"><a href="single-product.html">Brother Hoddies in Grey</a></h5>
+                                            <span class="price">
+													<span class="new">$38.00</span>
+                                            <span class="old">$42.50</span>
+                                            </span>
+                                            <span class="ratings">
+													<span class="rating-wrap">
+														<span class="star" style="width: 100%"></span>
+                                            </span>
+                                            <span class="rating-num">(4)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Single Product List End -->
+
+                                    <!-- Single Product List Start -->
+                                    <div class="single-product-list product-hover mb-6">
+                                        <div class="thumb">
+                                            <a href="single-product.html" class="image">
+                                                <img class="first-image" src="assets/images/products/small-product/2.jpg" alt="Product" />
+                                                <img class="second-image" src="assets/images/products/small-product/3.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title"><a href="single-product.html">Basic Jogging Shorts</a></h5>
+                                            <span class="price">
+													<span class="new">$21.00</span>
+                                            <span class="old">$22.50</span>
+                                            </span>
+                                            <span class="ratings">
+													<span class="rating-wrap">
+														<span class="star" style="width: 60%"></span>
+                                            </span>
+                                            <span class="rating-num">(4)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Single Product List End -->
+
+                                    <!-- Single Product List Start -->
+                                    <div class="single-product-list product-hover mb-6">
+                                        <div class="thumb">
+                                            <a href="single-product.html" class="image">
+                                                <img class="first-image" src="assets/images/products/small-product/4.jpg" alt="Product" />
+                                                <img class="second-image" src="assets/images/products/small-product/10.jpg" alt="Product" />
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <h5 class="title"><a href="single-product.html">Simple Woven Fabrics</a></h5>
+                                            <span class="price">
+													<span class="new">$86.00</span>
+                                            <span class="old">$90.00</span>
+                                            </span>
+                                            <span class="ratings">
+													<span class="rating-wrap">
+														<span class="star" style="width: 80%"></span>
+                                            </span>
+                                            <span class="rating-num">(1)</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <!-- Single Product List End -->
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <!-- Sidebar Widget End -->
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- section End -->
-
-
+    <!-- Shop Section End -->
 
 @endsection
